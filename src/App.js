@@ -14,13 +14,13 @@ export default function App() {
   const onAddFeedback = el => {
     switch (el) {
       case 'good':
-        setGood(good + 1);
+        setGood(s => s + 1);
         break;
       case 'neutral':
-        setNeutral(neutral + 1);
+        setNeutral(s => s + 1);
         break;
       case 'bad':
-        setBad(bad + 1);
+        setBad(s => s + 1);
         break;
       default:
         return;
